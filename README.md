@@ -1,7 +1,7 @@
 # code-chill
 Master project : Online development environment
 
-Code&Chill is an web application written in Java and React. It gives users the possibility to use their development environment in a browser. No more worries about setup so just code, and chill.
+Code&Chill is a web application written in Java and React. It gives users the possibility to use their development environment in a browser. No more worries about setup so just code, and chill.
 
 If you want to know more about this project check our website : https://codechillalluna.github.io/code-chill/
 
