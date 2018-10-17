@@ -28,7 +28,7 @@ En tant que ?, je veux ? afin de ?.
 
 ## Tests d'acceptance
 
-Tests
+Le test passe si ...
 
 ## Définition du fini
 
