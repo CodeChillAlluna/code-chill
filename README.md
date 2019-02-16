@@ -1,6 +1,8 @@
 # Code & Chill
 
-[![Server version](https://img.shields.io/github/tag/CodeChillAlluna/code-chill-server.svg?label=Server&style=for-the-badge)](https://github.com/CodeChillAlluna/code-chill-server)[![Client version](https://img.shields.io/github/tag/CodeChillAlluna/code-chill-client.svg?label=Client&style=for-the-badge)](https://github.com/CodeChillAlluna/code-chill-client)[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
+[![Server version](https://img.shields.io/github/tag/CodeChillAlluna/code-chill-server.svg?label=Server&style=for-the-badge)](https://github.com/CodeChillAlluna/code-chill-server)
+[![Client version](https://img.shields.io/github/tag/CodeChillAlluna/code-chill-client.svg?label=Client&style=for-the-badge)](https://github.com/CodeChillAlluna/code-chill-client)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
 
 Master project : Online development environment
 
