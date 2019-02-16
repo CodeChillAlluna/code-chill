@@ -22,7 +22,7 @@ If you want to know more about this project check our website : https://codechil
 
 # Server
 
-The server of Code&Chill is written in Java with the framework Spring-Boot 1.5. It's using JPA for interacting with a Postgres database or whatever database you want to use, JWT for authentication, Docker for managing user environment, and more.
+The server of Code&Chill is written in Java with the framework Spring-Boot 1.5. It's using JPA to interact with a Postgres database or whatever database you want to use, JWT for authentication, Docker to manage user environments, and more.
 
 The code for the server is accessible [here](https://github.com/CodeChillAlluna/code-chill-server).
 
@@ -53,7 +53,7 @@ cd code-chill
 
 ## Configuration
 
-Next we'll configure the Server and the client part.
+Next we'll configure the server and the client part.
 
 ### Server
 
@@ -67,15 +67,15 @@ The configuration for the server is in `resources/config.js`. Open the file and 
 
 ## Starting Code&Chill
 
-The last step is to start the containers for running Code&Chill. For that you'll find a `docker-compose.yml` in this repository. If you have clone this repository in your `$HOME` folder you doesn't have to edit it, otherwise you'll have to change the path to your configurations files in it.
+The last step is to start the containers to run Code&Chill. For that you'll find a `docker-compose.yml` in this repository. If you cloned this repository in your `$HOME` folder, you don't have to edit it. If you cloned it elsewhere, you'll have to change the path to your configurations files in it.
 
-Now to start Code&Chill just type the following command while you are in the folder where `docker-compose.yml` is.
+Now to start Code&Chill, just type the following command while you are in the folder where `docker-compose.yml` is.
 
 ```sh
 docker-compose up
 
-# If you want to start Code&Chill in background use this command
+# If you want to start Code&Chill in the background, use this command
 docker-compose up -d
 ```
 
-If you want you can also create a service file to run Code&Chill at startup, you can find a service file for Code&Chill in the `resources` of this repository.
+If you want, you can also create a service file to run Code&Chill at startup. You can find a service file for Code&Chill in the `resources` of this repository.
