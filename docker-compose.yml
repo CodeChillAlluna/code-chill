@@ -3,7 +3,7 @@ version: "3.4"
 services:
   code-chill-client:
     # You can use any version of our image
-    image: codechillaluna/code-chill-client:develop
+    image: codechillaluna/code-chill-client:1.6.0
     volumes:
       # Change "$HOME" by the folder where your application.yml is.
       - $HOME/code-chill/resources/config.js:/www/config/config.js
@@ -14,7 +14,7 @@ services:
       - code-chill-server
   code-chill-server:
     # You can use any version of our image
-    image: codechillaluna/code-chill-server:develop
+    image: codechillaluna/code-chill-server:1.6.0
     volumes:
       # Change "$HOME" by the folder where your application.yml is.
       - $HOME/code-chill/resources/application.yml:/config/application.yml
