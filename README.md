@@ -16,7 +16,7 @@ If you want to know more about this project check our website : https://codechil
 
 - [Code&Chill Server](#server)
 - [Code&Chill Client](#client)
-- [Installation](installation)
+- [Installation](#installation)
 
 
 
