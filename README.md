@@ -40,9 +40,20 @@ The code for the client is accessible [here](https://github.com/CodeChillAlluna/
 
 We're only going to show you the easiest installation for Code&Chill (Client & Server on the same server with one command to start), but you can easily separate the server and the client on two servers.
 
-We're also assuming you are on your `$HOME` directory during the installation but you can be wherever you want, you'll just have to replace `$HOME` by the directory where you are during this guide.
 
-First of all, go in your `$HOME` and clone this repository and go in the repository folder.
+
+## Requirements
+
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+
+
+
+## Download
+
+We're assuming you are on your `$HOME` directory during the installation but you can be wherever you want, you'll just have to replace `$HOME` by the directory where you are during this guide.
+
+First of all, go in your `$HOME` directory and clone this repository and go in the repository folder.
 
 ```sh
 git clone https://github.com/CodeChillAlluna/code-chill.git
