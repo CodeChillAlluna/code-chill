@@ -40,6 +40,8 @@ The code for the client is accessible [here](https://github.com/CodeChillAlluna/
 
 We're only going to show you the easiest installation for Code&Chill (Client & Server on the same server with one command to start), but you can easily separate the server and the client on two servers.
 
+For the easiest installation, we decided to dockerize our application so you can see our images on [DockerHub](https://hub.docker.com/u/codechillaluna).
+
 
 
 ## Requirements
