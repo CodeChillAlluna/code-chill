@@ -68,17 +68,17 @@ Next we'll configure the server and the client part.
 
 ### Server
 
-The configuration for the server is in `resources/application.yml`. Open the file and edit the values you want. All of the configuration fields are commented to let you know what it's for.
+The configuration for the server is in <a href="resources/application.yml" target="_blank">`resources/application.yml`</a>. Open the file and edit the values you want. All of the configuration fields are commented to let you know what it's for.
 
 ### Client
 
-The configuration for the server is in `resources/config.js`. Open the file and edit the values you want. All of the configuration fields are commented to let you know what it's for.
+The configuration for the server is in <a href="resources/config.js" target="_blank">`resources/config.js`</a>. Open the file and edit the values you want. All of the configuration fields are commented to let you know what it's for.
 
 
 
 ## Starting Code&Chill
 
-The last step is to start the containers to run Code&Chill. For that you'll find a `docker-compose.yml` in this repository. If you cloned this repository in your `$HOME` folder, you don't have to edit it. If you cloned it elsewhere, you'll have to change the path to your configurations files in it.
+The last step is to start the containers to run Code&Chill. For that you'll find a <a href="docker-compose.yml" target="_blank">`docker-compose.yml`</a> in this repository. If you cloned this repository in your `$HOME` folder, you don't have to edit it. If you cloned it elsewhere, you'll have to change the path to your configurations files in it.
 
 Now to start Code&Chill, just type the following command while you are in the folder where `docker-compose.yml` is.
 
