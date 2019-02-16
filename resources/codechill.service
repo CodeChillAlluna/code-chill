@@ -1,0 +1,18 @@
+# /etc/systemd/system/codechill.service
+
+[Unit]
+Description=Code&Chill Application Service
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+# Directory where your docker-compose.yml is
+WorkingDirectory=$HOME/code-chill
+ExecStart=/usr/local/bin/docker-compose up -d
+ExecStop=/usr/local/bin/docker-compose down
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,37 @@
+version: "3.4"
+
+services:
+  code-chill-client:
+    # You can use any version of our image
+    image: codechillaluna/code-chill-client:develop
+    volumes:
+      # Change "$HOME" by the folder where your application.yml is.
+      - $HOME/code-chill/resources/config.js:/www/config/config.js
+    ports:
+    # Change the first value to the port you want to use on your host.
+    - "3000:80"
+    depends_on:
+      - code-chill-server
+  code-chill-server:
+    # You can use any version of our image
+    image: codechillaluna/code-chill-server:develop
+    volumes:
+      # Change "$HOME" by the folder where your application.yml is.
+      - $HOME/code-chill/resources/application.yml:/config/application.yml
+    ports:
+      # Change the first value to the port you want to use on your host.
+      - "8080:8080"
+    depends_on:
+      - code-chill-db
+  code-chill-db:
+    image: postgres:11.2-alpine
+    # Script to init the database
+    volumes:
+      # Change "$HOME" by the folder where codechill.sql is.
+      - $HOME/code-chill/resources/codechill.sql:/docker-entrypoint-initdb.d/codechill.sql
+    environment:
+      # Change postgres credentials and database name.
+      # CHange this value according to what you set in your application.yml.
+      POSTGRES_PASSWORD: chill
+      POSTGRES_USER: code
+      POSTGRES_DB: codechill

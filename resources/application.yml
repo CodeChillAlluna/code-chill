@@ -1,0 +1,92 @@
+# Config context path to "/" by setting an empty string
+server:
+  contextPath:
+
+
+spring:
+  # Spring profile
+  profiles: "prod"
+
+  # -1 to avoid blocking large request (eg. exporting user environment)
+  mvc.async.request-timeout: -1
+
+  # JACKSON for serialization
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+
+  # Mail configuration
+  mail:
+    # The host for the email adress you want the app use to send mails.
+    host:
+    # The port for the email adress you want the app use to send mails.
+    port: 587
+    # Your username for the email adress you want the app use to send mails.
+    username: "CHANGEME"
+    # Your password for the email adress you want the app use to send mails.
+    password: "CHANGEME"
+    # Settings for the smtp client, you don't need to change them.
+    smtp:
+      protocol: smtp
+      debug: true
+    properties.mail.smtp:
+      auth: true
+      starttls.enable: true
+
+  # Datasource configuration
+  datasource:
+    # code-chill-db is the name of the service in the docker-compose.yml file so don't change it.
+    # codechill is the name of the database you can change it but remember to change it in the docker-compose.yml file to.
+    url: jdbc:postgresql://code-chill-db/codechill
+    # If you want to change the user for the database change it also in the docker-compose.yml file.
+    username: code
+    # If you want to change the password for the database change it also in the docker-compose.yml file.
+    password: chill
+
+  # JPA configuration
+  # Basically you don't have to touch it. 
+  jpa:
+    generate:
+      ddl: true
+    hibernate:
+      # It's recommended to disable auto ddl in production environment.
+      ddl-auto: none
+
+# JWT configuration      
+jwt:
+  # The header where your JWT must be.
+  header: Authorization
+  # Your secret for your JWT
+  ### CHANGE IT ABSOLUTELY FOR SAFETY ###
+  secret: CHANGEME
+  # Duration of your JWT
+  expiration: 604800
+  # Route for authentication and refreshing your JWT
+  # Don't change them because the client part will not be able to authenticate you.
+  route:
+    authentication:
+      path: auth
+      refresh: refresh
+
+# Configuration for the logs of the app.
+logging:
+  file: /var/log/codechill-server.log
+  pattern:
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    ROOT: ERROR
+
+# Application specific configuration
+app:
+  # The machine url where your Code&Chill server is running
+  # for letting the server access the docker API for managing users environments
+  # (You have to specify the machine url and not localhost because here localhost mean the docker where the app run)
+  dockerurl: http://192.168.1.53:2375
+  # The url where your Code&Chill client is running
+  # (In our case it's the same machine as the Code&Chill server, so localhost will do it)
+  clienturl: http://localhost:3000
+  # Here it's the range of port you want to open on your machine
+  # It's necessary to your user environments
+  # Each user environmnents will consume 1 port 
+  minPort: 64000
+  maxPort: 64050
