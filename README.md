@@ -10,7 +10,9 @@ Code&Chill is a web application written in Java and React. It gives users the po
 
 If you want to know more about this project check our website : https://codechillalluna.github.io/code-chill/
 
+# Demo
 
+[![Watch the video](https://img.youtube.com/vi/DsZTHo2dRqw/maxresdefault.jpg)](https://youtu.be/DsZTHo2dRqw)
 
 # Sumary
 
